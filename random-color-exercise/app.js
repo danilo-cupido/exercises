@@ -12,7 +12,7 @@ const makeRandColor = () => {
 	const r = Math.floor(Math.random() * 255);
 	const g = Math.floor(Math.random() * 255);
 	const b = Math.floor(Math.random() * 255);
-	if (r <= 80 || g <= 80 || b <= 80) {
+	if ((r && g) <= 100 || (r && b) <= 100 || (g && b) <= 100) {
 		h1.style.color = 'white';
 	} else {
 		h1.style.color = 'black';
