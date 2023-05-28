@@ -1,6 +1,5 @@
 const button = document.querySelector('button');
 const h1 = document.querySelector('h1');
-const lightText = 'white';
 
 button.addEventListener('click', function () {
 	const newColor = makeRandColor();
